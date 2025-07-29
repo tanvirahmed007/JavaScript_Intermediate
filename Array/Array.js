@@ -35,3 +35,30 @@ const numbers4 = [10, 20, -3, 30, -5, 40];
 let negativeNum = numbers4.find(number=>number<0);
 console.log(negativeNum);
 
+// Calculate the square root of each number and return a new array
+const numbers5 = [4, 9, 16, 25];
+let sqrRoot = numbers5.map(Math.sqrt);
+console.log(sqrRoot);
+
+
+// Filter words longer than 5 characters
+const words = ['apple', 'banana', 'kiwi', 'orange', 'grape'];
+let longerWords = words.filter(word=>word.length>5);
+console.log(longerWords);
+
+// Check if all numbers in the array are positive
+const numbers6 = [1, 2, 3, -4, 5];
+if(numbers6.find(number=>number<0)){
+    console.log(false);
+}
+else{
+    console.log(true);
+}
+
+
+// Concatenate all strings in the array with spaces between them
+const words2 = ['Hello', 'world', 'from', 'JavaScript'];
+let concatedString = words2.join(' ');
+console.log(concatedString);
+
+
